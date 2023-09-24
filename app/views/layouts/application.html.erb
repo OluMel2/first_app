@@ -14,3 +14,14 @@
     <%= yield %>
   </body>
 </html>
+
+<!--
+Railsでは、ビューを表示する際、
+
+・まずapplication.html.erbを読み、
+・次に、呼び出されたアクションに対応するビューファイルをapplication.html.erbの< yield >に埋め込む
+
+今回はhomes_controllerのtopアクションを使用するため、
+app/views/homes/top.html.erbの内容が表示されています。
+application.html.erbに< yield >がないと、各ページの内容を表示できません。
+-->
